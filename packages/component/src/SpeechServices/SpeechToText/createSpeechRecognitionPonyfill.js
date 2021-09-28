@@ -661,7 +661,7 @@ export default options => {
     }
 
     speechConfig.outputFormat = OutputFormat.Detailed;
-    speechConfig.setProfanity(2); // raw
+    speechConfig.setProfanity(ProfanityOption.Raw); // raw
     speechConfig.speechRecognitionLanguage = lang || 'en-US';
 
     return new SpeechRecognizer(speechConfig, audioConfig);
